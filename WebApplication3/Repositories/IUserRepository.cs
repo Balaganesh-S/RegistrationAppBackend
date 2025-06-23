@@ -7,5 +7,7 @@ namespace WebApplication3.Repositories
     {
         Task<User> addUser(User user);
         Task<bool> isEmailExist(string email);
+
+        Task<User> findUserByEmail(string email);
     }
 }

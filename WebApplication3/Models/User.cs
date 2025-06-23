@@ -21,5 +21,11 @@ namespace WebApplication3.Models
         public string phoneNumber { get; set; }
         [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
         public DateTime dateOfBirth { get; set; }
+
+        public DateTime createdDate { get; set; }
+
+        public string plan { get; set; }
+
+        public int age { get; set; }
     }
 }

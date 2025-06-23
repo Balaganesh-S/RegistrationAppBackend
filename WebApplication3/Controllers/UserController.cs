@@ -22,5 +22,13 @@ namespace WebApplication3.Controllers
              return StatusCode(response.StatusCode, response);
 
         }
+
+        [HttpPost("login")]
+
+        public async Task<IActionResult> login([FromBody] LoginRequestDto loginRequestDto)
+        {
+            var response = await _userService.Login(loginRequestDto);
+            return StatusCode(response.StatusCode, response);
+        }
     }
 }
